@@ -1,0 +1,96 @@
+/* Container for the chart to stop it from getting too big */
+.chart-container {
+    position: relative;
+    height: 40vh;  /* 40% of the viewport height */
+    width: 80vw;   /* 80% of the viewport width */
+    max-width: 400px; /* Maximum width so it doesn't look huge on desktop */
+    margin: 0 auto;   /* Centers the chart horizontally */
+}
+/* Select everything (*) and reset margins to 0 for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't make elements wider than set */
+    font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
+}
+
+/* Style the main background of the page */
+body {
+    background-color: #f4f7f6; /* A light grey-blue background */
+    display: flex;             /* Uses Flexbox to center the content */
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    min-height: 100vh;         /* Makes the body take up at least full screen height */
+}
+.container {
+    background-color: #ffffff; /* White background for the card */
+    width: 400px;              /* Fixed width */
+    padding: 30px;             /* Space inside the card */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Adds a subtle drop shadow */
+    text-align: center;        /* Centers the text inside */
+}
+
+h1 {
+    margin-bottom: 20px;       /* Adds space below the title */
+    color: #333;               /* Dark grey text color */
+}
+/* Style all input fields and the dropdown menu */
+input, select {
+    width: 100%;               /* Make them stretch to fill the container */
+    padding: 10px;             /* comfortable typing space */
+    margin-bottom: 15px;       /* Space between each input */
+    border: 1px solid #ddd;    /* Light grey border */
+    border-radius: 5px;        /* Slightly rounded corners */
+    font-size: 16px;           /* Readable text size */
+}
+
+/* Style the "Add Expense" button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Green color */
+    color: white;              /* White text */
+    border: none;              /* Remove default border */
+    border-radius: 5px;
+    cursor: pointer;           /* Changes mouse cursor to a hand pointer */
+    font-size: 16px;
+    transition: background 0.3s; /* Smooth color change on hover */
+}
+
+/* Change button color when hovering */
+button:hover {
+    background-color: #218838; /* Darker green */
+}
+.chart-container {
+    position: relative;
+    height: 300px;    /* Fixed height for the chart area */
+    width: 100%;      
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fff;
+    border-bottom: 1px solid #eee; /* Light line between items */
+    padding: 10px;
+    display: flex;                 /* Aligns text inside the row */
+    justify-content: space-between; /* Pushes text to edges */
+    color: #555;
+}
+.delete-btn {
+    cursor: pointer;          /* Shows the hand icon */
+    margin-left: 10px;        /* Spacing from the text */
+    padding: 5px;
+    border-radius: 5px;
+    transition: background 0.2s;
+    height: 30px;
+}
+
+.delete-btn:hover {
+    background-color: #ffcccc; /* Light red background on hover */
+}
